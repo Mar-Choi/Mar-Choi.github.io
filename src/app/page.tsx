@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import { prefix } from 'config/config'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,7 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src={`${prefix}/vercel.svg`}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
